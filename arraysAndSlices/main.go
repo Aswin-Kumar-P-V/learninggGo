@@ -61,11 +61,68 @@ func main() {
 
 	// fmt.Println(a, b)
 
-	c := []int{5, 6, 7, 9}
-	d := make([]int, 5)
-	copy(d, c)
-	fmt.Println(c, d)
-	c[0] = 1
-	fmt.Println(c, d)
+	// c := []int{5, 6, 7, 9}
+	// d := make([]int, 5)
+	// copy(d, c)
+	// fmt.Println(c, d)
+	// c[0] = 1
+	// fmt.Println(c, d)
+
+	// a := [5]int{}
+
+	// for i := 0; i < 5; i++ {
+	// 	a[i] = i + 1
+	// }
+	// for i, val := range a {
+	// 	fmt.Printf("index: %v, value: %v\n", i, val)
+	// }
+
+	// a := make([]int, 10)
+	// index := 0
+	// for i := 42; i < 52; i++ {
+	// 	a[index] = i
+	// 	index++
+	// }
+	// fmt.Println(a)
+	// a = append(a, 52)
+	// fmt.Println(a)
+	// b := []int{53, 54, 55, 56, 57}
+	// a = append(a, b...)
+	// fmt.Println(a)
+	// a = append(a[:3], a[6:]...)
+	// fmt.Println(a)
+
+	// x := make([]int, 10)
+	// fmt.Println(len(x))
+	// fmt.Println(cap(x))
+	// x = append(x, 1)
+	// fmt.Println(x)
+
+	// y := make([]int, 0, 10)
+	// fmt.Println(len(y))
+	// fmt.Println(cap(y))
+	// y = append(y, 1)
+	// fmt.Println(y)
+
+	a := map[string]int{
+		"me":  21,
+		"sis": 18,
+	}
+	fmt.Println(a["me"])
+
+	b := make(map[string]int)
+
+	b["hello"] = 1
+	b["world"] = 2
+
+	for key, val := range b {
+		fmt.Println(key, val)
+	}
+	delete(b, "hello")
+	if val, ok := b["world"]; !ok {
+		fmt.Println("value doesnt exits")
+	} else {
+		fmt.Println(val)
+	}
 
 }
