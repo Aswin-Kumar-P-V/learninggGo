@@ -1,0 +1,1 @@
+2023/06/25 12:25:58 Error happended while opening New.txt file open New.txt: The system cannot find the file specified.
