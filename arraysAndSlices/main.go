@@ -3,6 +3,7 @@ package main
 import "fmt"
 
 func main() {
+
 	// a := [2]int{0, 1}
 	// fmt.Printf("Array a is %v \n", a)
 	// b := [...]string{"Hello", "world"}
@@ -124,5 +125,4 @@ func main() {
 	} else {
 		fmt.Println(val)
 	}
-
 }
